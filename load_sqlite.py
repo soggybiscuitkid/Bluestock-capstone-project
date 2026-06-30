@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS fact_performance (
 """
 
 # 4. Now you can safely use engine.connect()
-print("🏗️ Initializing Database Schema...")
+print("Initializing Database Schema...")
 with engine.connect() as connection:
     # Split by semicolon to run statements one by one
     statements = [stmt.strip() for stmt in schema_sql.split(";") if stmt.strip()]
